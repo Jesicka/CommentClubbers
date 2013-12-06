@@ -1,8 +1,13 @@
 <div class="jumbotron center">
 	<h1>Welcome!</h1>
-	<h2>Become a Comment Clubber today.</h2>
+
+	<% if !user_signed_in? %>
+		<h2>Become a Comment Clubber today.</h2>
+	<% end %>
+
 	<% if user_signed_in? %>
-		# do something
+		<h2>You're inside the app now. </h2>
+		But since we're not ready yet, come back soon.
 	<% else %>
 		<p>
 			<%= link_to "Log In", new_user_session_path, class: "btn btn-default btn-lg" %>
