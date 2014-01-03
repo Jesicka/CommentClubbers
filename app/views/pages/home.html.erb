@@ -7,8 +7,9 @@
 
 	<% if user_signed_in? %>
 		<h2>You're inside the app now. </h2>
-		<%= link_to "Leave A Comment", new_status_path, class: "btn btn-default btn-lg" %><p>
-		Browse Blogs
+		<%= link_to "Leave A Comment", new_status_path, class: "btn btn-primary btn-lg" %><p>
+		<p>
+		<%= link_to "Browse Comments", statuses_path, class: "btn btn-default btn-lg" %><p>
 	<% else %>
 
 		<p>
