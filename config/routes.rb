@@ -1,4 +1,5 @@
 Commentclubbers::Application.routes.draw do
+  get "profiles/show"
   resources :statuses
 
   devise_for :users
