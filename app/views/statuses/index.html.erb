@@ -2,8 +2,7 @@
   <h1>Post Your Link</h1>
 </div>
 
-<%= link_to 'Post Link Here', new_status_path, class: "btn btn-success" %>
-
+<%= link_to 'Post Link Here', new_status_path, class: "btn btn-success" %><p>
 <% @statuses.each do | status | %>
 <div class="status">
   <strong><%= status.user.full_name %></strong>
