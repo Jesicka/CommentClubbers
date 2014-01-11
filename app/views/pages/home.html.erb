@@ -1,12 +1,12 @@
 <div class="jumbotron center">
-	<h1>Welcome!</h1>
+	<h1>Welcome.</h1>
 
 	<% if !user_signed_in? %>
 		<h2>Become a Comment Clubber today.</h2>
 	<% end %>
 
 	<% if user_signed_in? %>
-		<h2>You're inside the app now. </h2>
+		<h2>You are now a member of Comment Clubbers. Congratulations!</h2>
 		<%= link_to "Leave A Comment", new_status_path, class: "btn btn-primary btn-lg" %><p>
 		<p>
 		<%= link_to "Browse Comments", statuses_path, class: "btn btn-warning btn-lg" %><p>
