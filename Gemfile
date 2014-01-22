@@ -11,6 +11,8 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 gem 'devise', '~> 3.2.2'
 gem 'rinku'
 gem 'rails_autolink'
+gem 'redcarpet'
+gem 'nokogiri', '~> 1.6.1'
 
 group :development, :test do
 	gem 'sqlite3'

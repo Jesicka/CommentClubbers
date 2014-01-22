@@ -3,12 +3,15 @@
 <p>
   <strong>Name:</strong>
   <%= @status.user.full_name %>
-
 </p>
+
+
 
 <p>
   <strong>Content:</strong>
-  <%= @status.content %>
+  <%= raw Redcarpet::Markdown.new(@status.content).to_html %>
+
+
 </p>
 
 <%= link_to 'Edit', edit_status_path(@status), class: "btn btn-default" %>  
