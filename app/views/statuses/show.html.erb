@@ -8,7 +8,7 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @status.content %>
+  <%= dat_markdown(@status.content) %>
 </p>
 
 <%= link_to 'Edit', edit_status_path(@status), class: "btn btn-default" %>  

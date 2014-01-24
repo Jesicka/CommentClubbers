@@ -11,7 +11,7 @@
     </div>
     <div class="span5">
       <strong><%= status.user.full_name %></strong>
-      <p><%= status.content %></p>
+      <p><%= dat_markdown(status.content) %></p>
       <div class="meta">
         <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
         <span class="admin">
